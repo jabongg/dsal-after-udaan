@@ -1,4 +1,4 @@
-package com.java.librarymanagementsystem;
+package com.java.projects.librarymanagementsystem;
 
 public class Constants {
     public static final int MAX_BOOKS_ISSUED_TO_A_USER = 5;

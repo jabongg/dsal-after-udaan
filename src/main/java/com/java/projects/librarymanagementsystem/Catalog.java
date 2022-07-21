@@ -1,4 +1,4 @@
-package com.java.librarymanagementsystem;
+package com.java.projects.librarymanagementsystem;
 
 import java.util.Date;
 import java.util.HashMap;

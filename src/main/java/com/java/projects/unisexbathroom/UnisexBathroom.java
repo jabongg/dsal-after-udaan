@@ -1,4 +1,4 @@
-package com.java.unisexbathroom;
+package com.java.projects.unisexbathroom;
 
 import java.util.concurrent.Semaphore;
 

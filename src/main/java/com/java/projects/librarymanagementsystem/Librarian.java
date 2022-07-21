@@ -1,4 +1,4 @@
-package com.java.librarymanagementsystem;
+package com.java.projects.librarymanagementsystem;
 
 public class Librarian extends Account {
     public void addBookItem() {
