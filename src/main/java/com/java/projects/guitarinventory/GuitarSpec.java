@@ -64,4 +64,21 @@ public class GuitarSpec {
     public void setNumStrings(Integer numStrings) {
         this.numStrings = numStrings;
     }
+
+    public boolean matches(GuitarSpec otherSpec) {
+        if (builder != otherSpec.builder)
+            return false;
+        if ((model != null) && (!model.equals("")) &&
+                (!model.equals(otherSpec.model)))
+            return false;
+        if (type != otherSpec.type)
+            return false;
+        if (numStrings != otherSpec.numStrings)
+            return false;
+        if (backWood != otherSpec.backWood)
+            return false;
+        if (topWood != otherSpec.topWood)
+            return false;
+        return true;
+    }
 }

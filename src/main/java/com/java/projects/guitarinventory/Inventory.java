@@ -44,22 +44,8 @@ public class Inventory {
             Guitar guitar = (Guitar) i.next();
             // Ignore serial number since that’s unique
             // Ignore price since that’s unique
-            GuitarSpec guitarSpec = guitar.getSpec();
-            if (searchSpec.getNumStrings() != guitarSpec.getNumStrings())
-                continue;
-            if  (!searchSpec.getBuilder().equals(guitarSpec.getBuilder()))
-                continue;
-            String model = searchSpec.getModel().toLowerCase();
-            if ((model != null) && (!model.equals("")) && (!model.equals(guitarSpec.getModel().toLowerCase())))
-                continue;
-            if (searchSpec.getType() != guitarSpec.getType())
-                continue;
-            if (searchSpec.getBackWood() != guitarSpec.getBackWood())
-                continue;
-            if (searchSpec.getTopWood() != guitarSpec.getTopWood())
-                continue;
-
-            matchingGuitars.add(guitar);
+            if (guitar.getSpec().matches(searchSpec))
+                matchingGuitars.add(guitar);
         }
         return matchingGuitars;
     }
