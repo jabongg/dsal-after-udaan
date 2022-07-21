@@ -6,13 +6,15 @@ public class GuitarSpec {
     private Type type;
     private Wood backWood;
     private Wood topWood;
+    private Integer numStrings;
 
-    public GuitarSpec(Builder builder, String model, Type type, Wood backWood, Wood topWood) {
+    public GuitarSpec(Builder builder, String model, Type type, Wood backWood, Wood topWood, Integer numStrings) {
         this.builder = builder;
         this.model = model;
         this.type = type;
         this.backWood = backWood;
         this.topWood = topWood;
+        this.numStrings = numStrings;
     }
 
     public Builder getBuilder() {
@@ -53,5 +55,13 @@ public class GuitarSpec {
 
     public void setTopWood(Wood topWood) {
         this.topWood = topWood;
+    }
+
+    public Integer getNumStrings() {
+        return numStrings;
+    }
+
+    public void setNumStrings(Integer numStrings) {
+        this.numStrings = numStrings;
     }
 }

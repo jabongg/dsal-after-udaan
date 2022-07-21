@@ -45,7 +45,8 @@ public class Inventory {
             // Ignore serial number since that’s unique
             // Ignore price since that’s unique
             GuitarSpec guitarSpec = guitar.getSpec();
-
+            if (searchSpec.getNumStrings() != guitarSpec.getNumStrings())
+                continue;
             if  (!searchSpec.getBuilder().equals(guitarSpec.getBuilder()))
                 continue;
             String model = searchSpec.getModel().toLowerCase();

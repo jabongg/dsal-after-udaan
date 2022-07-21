@@ -8,15 +8,15 @@ public class FindGuitarTester {
         Inventory inventory = new Inventory();
         Guitar guitar1 = new Guitar("SNSTREL123406ALD", 4999, Builder.FENDER, "Stratocastor",
                 Type.ELECTRIC, Wood.ALDER, Wood.ALDER, new GuitarSpec(Builder.FENDER, "Stratocastor",
-                Type.ELECTRIC, Wood.ALDER, Wood.ALDER));
+                Type.ELECTRIC, Wood.ALDER, Wood.ALDER, 6));
 
         Guitar guitar2 = new Guitar("SNSTREL123407ALD", 4067, Builder.COLLINGS, "Stratocastor",
                 Type.ELECTRIC, Wood.ALDER, Wood.BRAZILIAN_ROSEWOOD, new GuitarSpec(Builder.COLLINGS, "Stratocastor",
-                Type.ELECTRIC, Wood.ALDER, Wood.BRAZILIAN_ROSEWOOD));
+                Type.ELECTRIC, Wood.ALDER, Wood.BRAZILIAN_ROSEWOOD, 6));
 
         Guitar guitar3 = new Guitar("SNSTREL123408ALD", 2999, Builder.FENDER, "Stratocastor",
                 Type.ACOUSTIC, Wood.ALDER, Wood.INDIAN_ROSEWOOD, new GuitarSpec(Builder.FENDER, "Stratocastor",
-                Type.ACOUSTIC, Wood.ALDER, Wood.INDIAN_ROSEWOOD));
+                Type.ACOUSTIC, Wood.ALDER, Wood.INDIAN_ROSEWOOD, 12));
 
         inventory.initializeInventory(guitar1);
         inventory.initializeInventory(guitar2);
@@ -25,20 +25,20 @@ public class FindGuitarTester {
         inventory.addGuitar("V95693",
                 1499.95, Builder.FENDER, "Stratocastor",
                 Type.ACOUSTIC, Wood.INDIAN_ROSEWOOD, Wood.INDIAN_ROSEWOOD, new GuitarSpec(Builder.FENDER, "Stratocastor",
-                        Type.ACOUSTIC, Wood.INDIAN_ROSEWOOD, Wood.INDIAN_ROSEWOOD));
+                        Type.ACOUSTIC, Wood.INDIAN_ROSEWOOD, Wood.INDIAN_ROSEWOOD, 12));
 
         inventory.addGuitar("V9512",
                 1549.95, Builder.FENDER,
                 "Stratocastor", Type.ELECTRIC,
                 Wood.ALDER, Wood.ALDER, new GuitarSpec(Builder.FENDER,
                         "Stratocastor", Type.ELECTRIC,
-                        Wood.ALDER, Wood.ALDER));
+                        Wood.ALDER, Wood.ALDER, 4));
 
 
         System.out.println(inventory.toString());
         // erin's requirements
         GuitarSpec erinGuitarSpec = new GuitarSpec(Builder.FENDER, "Stratocastor",
-                Type.ELECTRIC, Wood.ALDER, Wood.ALDER);
+                Type.ACOUSTIC, Wood.ALDER, Wood.INDIAN_ROSEWOOD, 12);
 
 
 
