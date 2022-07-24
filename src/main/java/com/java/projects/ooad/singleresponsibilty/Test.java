@@ -2,15 +2,17 @@ package com.java.projects.ooad.singleresponsibilty;
 
 public class Test {
     public static void main(String[] args) {
-        User user1 = new User("9599229614", "jbpvns@gmail.com", "user1.txt");
-        User user2 = new User("9599229613", "shilpid18@gmail.com", "user2.txt");
 
-        //Printing user report
+        UserDao userDao = new UserDao("file1.txt");
+
+        User user1 = new User();
+        User user2 = new User();
+
         user1.createUser();
-        user1.generateUserReport();
-
         user2.createUser();
-        user2.generateUserReport();
+        //Printing user report
+        UserReport userReport = new UserReport(userDao);
+        userReport.printTotalUsers();
 
 
 
