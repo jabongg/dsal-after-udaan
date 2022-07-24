@@ -14,7 +14,5 @@ public class Test {
         UserReport userReport = new UserReport(userDao);
         userReport.printTotalUsers();
 
-
-
     }
 }
