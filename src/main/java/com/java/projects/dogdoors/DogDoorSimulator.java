@@ -3,6 +3,7 @@ package com.java.projects.dogdoors;
 public class DogDoorSimulator {
     public static void main(String[] args) {
         DogDoor door = new DogDoor();
+        door.setDogVoice("Woof");
         door.setDoorHeight(12);
         BarkRecognizer recognizer = new BarkRecognizer(door);
 
