@@ -8,7 +8,7 @@ public class BarkRecognizer {
         this.door = door;
     }
 
-    public Boolean recognize(String bark) {
+    public Boolean recognize(Bark bark) {
         System.out.println("Recognizer heard a bark. " + bark);
 
         if (door.isOwnersDogsBark(bark)) {

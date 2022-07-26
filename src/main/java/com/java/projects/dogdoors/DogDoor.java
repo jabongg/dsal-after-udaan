@@ -6,7 +6,6 @@ import java.util.TimerTask;
 public class DogDoor {
     private boolean open;
     private Integer doorHeight;
-    private String dogVoice;
     private Bark allowedBark;
 
     public DogDoor() {
@@ -34,8 +33,8 @@ public class DogDoor {
         open = false;
     }
 
-    public boolean isOwnersDogsBark(String dogVoice) {
-        if (this.dogVoice.equals(dogVoice)) { // String's equals() method checks content and not the reference unlike Object's equals() method.
+    public boolean isOwnersDogsBark(Bark bark) {
+        if (this.getAllowedBark().equals(bark)) { // String's equals() method checks content and not the reference unlike Object's equals() method.
             return true;
         } else {
             return false;
@@ -56,14 +55,6 @@ public class DogDoor {
 
     public void setOpen(boolean open) {
         this.open = open;
-    }
-
-    public String getDogVoice() {
-        return dogVoice;
-    }
-
-    public void setDogVoice(String dogVoice) {
-        this.dogVoice = dogVoice;
     }
 
     public Bark getAllowedBark() {

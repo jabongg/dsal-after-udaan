@@ -1,83 +1,30 @@
 package com.java.projects.guitarinventory;
 
-public class GuitarSpec {
-    private Builder builder;
-    private String model;
-    private Type type;
-    private Wood backWood;
-    private Wood topWood;
-    private Integer numStrings;
+public class GuitarSpec extends InstrumentSpec {
 
-    public GuitarSpec(Builder builder, String model, Type type, Wood backWood, Wood topWood, Integer numStrings) {
-        this.builder = builder;
-        this.model = model;
-        this.type = type;
-        this.backWood = backWood;
-        this.topWood = topWood;
+    private int numStrings;
+
+    public GuitarSpec(Builder builder, String model, Type type, Wood backWood, Wood topWood, int numStrings) {
+        super(builder, model, type, backWood, topWood);
         this.numStrings = numStrings;
     }
 
-    public Builder getBuilder() {
-        return builder;
-    }
-
-    public void setBuilder(Builder builder) {
-        this.builder = builder;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public Type getType() {
-        return type;
-    }
-
-    public void setType(Type type) {
-        this.type = type;
-    }
-
-    public Wood getBackWood() {
-        return backWood;
-    }
-
-    public void setBackWood(Wood backWood) {
-        this.backWood = backWood;
-    }
-
-    public Wood getTopWood() {
-        return topWood;
-    }
-
-    public void setTopWood(Wood topWood) {
-        this.topWood = topWood;
-    }
-
-    public Integer getNumStrings() {
+    public int getNumStrings() {
         return numStrings;
     }
 
-    public void setNumStrings(Integer numStrings) {
+    public void setNumStrings(int numStrings) {
         this.numStrings = numStrings;
     }
 
-    public boolean matches(GuitarSpec otherSpec) {
-        if (builder != otherSpec.builder)
+    @Override
+    public boolean matches(InstrumentSpec otherSpec) {
+        if (!super.matches(otherSpec))
             return false;
-        if ((model != null) && (!model.equals("")) &&
-                (!model.equals(otherSpec.model)))
+        if (!(otherSpec instanceof GuitarSpec))
             return false;
-        if (type != otherSpec.type)
-            return false;
-        if (numStrings != otherSpec.numStrings)
-            return false;
-        if (backWood != otherSpec.backWood)
-            return false;
-        if (topWood != otherSpec.topWood)
+        GuitarSpec spec = (GuitarSpec) otherSpec;
+        if (numStrings != spec.numStrings)
             return false;
         return true;
     }
