@@ -23,4 +23,11 @@ public class MandolinSpec extends InstrumentSpec {
             return false;
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "MandolinSpec{" +
+                "style=" + style +
+                '}';
+    }
 }

@@ -3,10 +3,10 @@ package com.java.projects.guitarinventory;
 import java.util.*;
 
 public class Inventory {
-    private List<Instrument> instruments;
+    private List<Instrument> inventory;
 
     public Inventory() {
-        instruments = new LinkedList<>();
+        inventory = new LinkedList<>();
     }
 
     public void addInstrument(String serialNumber, double price, InstrumentSpec spec) {
@@ -18,10 +18,12 @@ public class Inventory {
         if (spec instanceof MandolinSpec) {
             instrument = new Mandolin(serialNumber, price, (MandolinSpec) spec);
         }
+
+        inventory.add(instrument);
     }
 
     public Instrument addInstrument(Instrument guitar) {
-        instruments.add(guitar);
+        inventory.add(guitar);
         return guitar;
     }
 
@@ -29,7 +31,7 @@ public class Inventory {
     // to find on what basis serial number or which field of the guitar.
     public Instrument getInstrument(String serialNumber) {
         // iterate through the entire inventory and search for the particular guitar.
-        for (Instrument currInstrument : instruments) {
+        for (Instrument currInstrument : inventory) {
             if (currInstrument.getSerialNumber().equals(serialNumber)) {
                 return currInstrument;
             }
@@ -41,39 +43,39 @@ public class Inventory {
     // to find on what basis serial number or which field of the guitar.
     public List<Instrument> search(GuitarSpec searchSpec) {
 
-        List<Instrument> matchingInstruments = new ArrayList<>();
-        for (Iterator i = instruments.iterator(); i.hasNext(); ) {
+        List<Instrument> matchingIGuitars = new ArrayList<>();
+        for (Iterator i = inventory.iterator(); i.hasNext(); ) {
             Instrument guitar = (Instrument) i.next();
             // Ignore serial number since that’s unique
             // Ignore price since that’s unique
             if (guitar.getSpec().matches(searchSpec))
-                matchingInstruments.add(guitar);
+                matchingIGuitars.add(guitar);
         }
-        return matchingInstruments;
+        return matchingIGuitars;
     }
 
     // to find on what basis serial number or which field of the mandolin.
     public List<Instrument> search(MandolinSpec searchSpec) {
-        List<Instrument> matchingInstruments = new ArrayList<>();
-        for (Iterator i = instruments.iterator(); i.hasNext(); ) {
+        List<Instrument> matchingMandolins = new ArrayList<>();
+        for (Iterator i = inventory.iterator(); i.hasNext(); ) {
             Instrument guitar = (Instrument) i.next();
             // Ignore serial number since that’s unique
             // Ignore price since that’s unique
             if (guitar.getSpec().matches(searchSpec))
-                matchingInstruments.add(guitar);
+                matchingMandolins.add(guitar);
         }
-        return matchingInstruments;
+        return matchingMandolins;
     }
 
     public void initializeInventory(Instrument instrument) {
         // add guitars to inventory
-        instruments.add(instrument);
+        inventory.add(instrument);
     }
 
     @Override
     public String toString() {
         return "Inventory{" +
-                "Instrument=" + instruments +
+                "inventory=" + inventory +
                 '}';
     }
 }

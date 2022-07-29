@@ -1,6 +1,6 @@
 package com.java.projects.guitarinventory;
 
-public abstract class Instrument {
+public abstract class Instrument<T> {
     private String serialNumber;
     private double price;
     private InstrumentSpec spec;

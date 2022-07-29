@@ -69,4 +69,15 @@ public abstract class InstrumentSpec {
             return false;
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "InstrumentSpec{" +
+                "builder=" + builder +
+                ", model='" + model + '\'' +
+                ", type=" + type +
+                ", backWood=" + backWood +
+                ", topWood=" + topWood +
+                '}';
+    }
 }

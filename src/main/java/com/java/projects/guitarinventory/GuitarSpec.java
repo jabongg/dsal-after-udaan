@@ -28,4 +28,11 @@ public class GuitarSpec extends InstrumentSpec {
             return false;
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "GuitarSpec{" +
+                "numStrings=" + numStrings +
+                '}';
+    }
 }
