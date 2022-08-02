@@ -1,0 +1,17 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(®ñ»šÿÿÿÿÿ
+X	java:S125"<This block of commented-out lines of code should be removed.(÷‘å×8¤Œİ° 0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ö±•×øÿÿÿÿ
+\
+java:S3457"AFormat specifiers should be used instead of string concatenation.(‹Ñİíùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‹Ñİíùÿÿÿÿ
+Q	java:S1258"<This block of commented-out lines of code should be removed.(¨œ…
+X	java:S125O"<This block of commented-out lines of code should be removed.(¨œ…8¬€è° 0
+E
+java:S1144"/Remove this unused private "printArray" method.(ÖüÛ™
+Y
+java:S1144"7Remove this unused private "subarrayWithMaxSum" method.(‚ó¡íÿÿÿÿÿ8óÿİ° 0
+c
+java:S1144,"FRemove this unused private "subArrayWithMaximumSumKedanesAlgo" method.(¤İáå8¦Úô° 0
+f	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤İáå
+m	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èìàâ8­€è° 0

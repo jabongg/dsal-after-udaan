@@ -1,0 +1,5 @@
+
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(έσυ
+S	java:S106r"9Replace this use of System.out or System.err by a logger.(Ι’οΉωÿÿÿÿ
+k	java:S117n"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΗΉ‡‘ώÿÿÿÿ

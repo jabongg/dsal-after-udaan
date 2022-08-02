@@ -1,0 +1,10 @@
+
+
+java:S1186
+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(É”š²8Øü¿Àœ0
+M
+java:S1068"0Remove this unused "creationDate" private field.(ĞÉ¸8Ûü¿Àœ0
+U
+java:S1068"3Remove this unused "bookItemBarcode" private field.(€§Ôøÿÿÿÿ8Ûü¿Àœ0
+N
+java:S1068",Remove this unused "memberId" private field.(ë Ç¼ùÿÿÿÿ8Ûü¿Àœ0

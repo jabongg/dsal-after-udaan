@@ -1,0 +1,10 @@
+
+T
+java:S1854"9Remove this useless assignment to local variable "count".(¦Ï–Þþÿÿÿÿ
+:
+java:S1659?"Declare "t" on a separate line.(ÚŠ§èúÿÿÿÿ
+S	java:S106@"9Replace this use of System.out or System.err by a logger.(žÉœ£ùÿÿÿÿ
+C
+java:S1128".Remove this unused import 'java.util.HashSet'.(Ê‚êX
+E
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿ

@@ -1,0 +1,7 @@
+
+f
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(éñ‚¢
+B
+java:S1125"'Remove the unnecessary boolean literal.(Ôò¯‡ÿÿÿÿÿ
+Z	java:S1064"9Replace this use of System.out or System.err by a logger.(¤îÜùÿÿÿÿ8İ‹ÿŸ0
+]	java:S1252"<This block of commented-out lines of code should be removed.(ï£ƒäùÿÿÿÿ8‚Â‹ÿŸ0

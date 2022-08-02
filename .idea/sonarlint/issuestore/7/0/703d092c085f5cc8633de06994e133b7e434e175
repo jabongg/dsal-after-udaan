@@ -1,0 +1,9 @@
+
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(—Ã˜ùÿÿÿÿ8Ö˜çËœ0
+
+java:S1186*"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¾ñˆ8‚¾õÊœ0
+
+java:S1845""tRename method "getTotalBooksCheckedout" to prevent any misunderstanding/clash with method "getTotalBooksCheckedOut".(Üçã8¢Ù´Àœ0
+J
+java:S2447"-Null is returned but a "Boolean" is expected.(¥¹ï8°É¯Àœ0

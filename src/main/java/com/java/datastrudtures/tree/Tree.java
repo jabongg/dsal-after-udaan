@@ -1,13 +1,13 @@
 package com.java.datastrudtures.tree;
 
 /**
- *  *
- *  * Input:
- *  *            2
- *  *          /    \
- *  *         1      6
- *  *               /  \
- *  *              3    7
+ * *
+ * * Input:
+ * *            2
+ * *          /    \
+ * *         1      6
+ * *               /  \
+ * *              3    7
  */
 public class Tree {
     public static void inorder(TreeNode root) {
@@ -28,5 +28,20 @@ public class Tree {
         int rh = height(root.right);
 
         return 1 + Math.max(lh, rh);
+    }
+
+    public static TreeNode deleteNode(TreeNode root, int k) {
+        //add code here.
+        if (root == null) {
+            return null;
+        }
+        root.left = deleteNode(root.left, k);
+
+        if (root.data >= k) {
+            return root.left;
+        }
+
+        root.right = deleteNode(root.right, k);
+        return root;
     }
 }

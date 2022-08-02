@@ -1,0 +1,17 @@
+
+k	java:S116"ORename this field "ISBN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤‚ˆ™8®ğÂÀœ0
+E
+java:S1068"(Remove this unused "ISBN" private field.(¤‚ˆ™8°ğÂÀœ0
+K
+java:S1068")Remove this unused "title" private field.(åõò¹ıÿÿÿÿ8±ğÂÀœ0
+H
+java:S1068	"+Remove this unused "subject" private field.(­¬í8±ğÂÀœ0
+O
+java:S1068
+"-Remove this unused "publisher" private field.(¡”¤úøÿÿÿÿ8±ğÂÀœ0
+N
+java:S1068",Remove this unused "language" private field.(ûòÁ‚üÿÿÿÿ8±ğÂÀœ0
+S
+java:S1068"1Remove this unused "numberOfPages" private field.(°° ñüÿÿÿÿ8²ğÂÀœ0
+G
+java:S1068"+Remove this unused "authors" private field.(¹ú‡8²ğÂÀœ0

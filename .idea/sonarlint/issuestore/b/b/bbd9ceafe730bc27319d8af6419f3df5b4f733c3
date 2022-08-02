@@ -1,0 +1,6 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(–นฟÿÿÿÿÿ8หัม€ฃ0
+a
+java:S2147)"DCombine this catch with the one at line 39, which has the same body.(๏ญฃฤ8หัม€ฃ0
+i
+java:S1858%"G"line" is already a string, there's no need to call "toString()" on it.(เฬฟüÿÿÿÿ8อัม€ฃ0

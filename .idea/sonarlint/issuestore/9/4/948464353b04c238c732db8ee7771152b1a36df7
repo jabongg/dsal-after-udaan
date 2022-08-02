@@ -1,0 +1,9 @@
+
+o
+java:S3776/"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ÿóß†8îÎØ“¡0
+A
+java:S16590"Declare "w" on a separate line.(³ù·¿ÿÿÿÿÿ8ïÎØ“¡0
+N
+java:S11971",Move the array designators [][] to the type.(ëèìòûÿÿÿÿ8ïÎØ“¡0
+m	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿóß†8ğÎØ“¡0
+r	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëèìòûÿÿÿÿ8ğÎØ“¡0

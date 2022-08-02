@@ -1,0 +1,23 @@
+
+r
+java:S1450"WRemove the "lastNode" field and declare it as a local variable in the relevant methods.(ÏÈìùÿÿÿÿ
+\
+java:S1854H"FRemove this useless assignment to local variable "isLastNodeAssigned".(ìÈä
+>
+java:S1659"#Declare "next1" on a separate line.(ÿ…Õşÿÿÿÿ
+9
+java:S1659"#Declare "next2" on a separate line.(ÿ–‹
+9
+java:S1659"#Declare "prev2" on a separate line.(ÄÚØ”
+R
+java:S1068"7Remove this unused "isCommonHeadDecided" private field.(Ä¬¿§úÿÿÿÿ
+G
+java:S1068",Remove this unused "lastNode" private field.(ÏÈìùÿÿÿÿ
+^
+java:S2259C"CA "NullPointerException" could be thrown; "curr1" is nullable here.(Î±¯ûÿÿÿÿÿ
+Y
+java:S2259:"CA "NullPointerException" could be thrown; "curr2" is nullable here.(ÍÁ¡°
+M
+java:S2589="7Remove this expression which always evaluates to "true"(»§ò’
+Z
+java:S2583F"DChange this condition so that it does not always evaluate to "false"(»§ò’

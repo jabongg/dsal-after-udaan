@@ -1,4 +1,7 @@
 package com.java.datastrudtures.tree;
+
+import static com.java.datastrudtures.tree.Tree.*;
+
 /*
  *
  * Input:
@@ -14,12 +17,14 @@ public class TreeDriver {
         root = new TreeNode(null, 2, null);
         root.left = new TreeNode(null, 1, null);
         root.right = new TreeNode(null, 6, null);
-        root.right.left = new TreeNode(null, 3 , null);
+        //root.right.left = new TreeNode(null, 3 , null);
         root.right.right = new TreeNode(null, 7, null);
 
 
-        Tree.inorder(root);
+        inorder(root);
 
-        System.out.println("\nheight :" + Tree.height(root));
+        System.out.println("\nheight :" + height(root));
+
+        Tree.deleteNode(root, 6);
     }
 }
