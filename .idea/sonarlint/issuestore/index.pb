@@ -163,10 +163,6 @@ l
 <src/main/java/com/java/datastrudtures/leetcode/ListNode.java,d/4/d43d7f4a6abfcb5cbb0218ec3b124ff97c14ae5d
 a
 1src/main/java/com/java/datastrudtures/dp/LIS.java,4/0/40b44fd56e0040613b33a063df839bca33365c7a
-g
-7src/main/java/com/java/datastrudtures/dp/SubsetSum.java,6/e/6e7830a9cd8912dfc4dc0150e29be861d9b04d03
-h
-8src/main/java/com/java/datastrudtures/dp/Knapsack01.java,2/a/2aa51f35327e94014ef2ef8585eefd45e31b5f92
 }
 Msrc/main/java/com/java/datastrudtures/leetcode/ContiguousSubArraySumP523.java,2/1/211007af4d552d0b8fab06161529605bcb826ac0
 x

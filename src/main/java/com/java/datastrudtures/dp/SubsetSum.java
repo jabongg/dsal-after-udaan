@@ -1,5 +1,9 @@
 package com.java.datastrudtures.dp;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
 public class SubsetSum {
 
     // Returns the maximum value that can
@@ -39,6 +43,19 @@ public class SubsetSum {
     public static void main(String[] args) {
         int[] weight = {1, 4, 5, 7};
         int W = 15;
+
+        Map<Integer, String> destin = new TreeMap<>();
+        destin.put(10, "Delhi");
+        destin.put(7, "Gurgaon");
+        destin.put(19, "Noida");
+        destin.put(3, "Ring Road");
+        //final Map.Entry<Integer, Integer> prevMeet = destin.getOrDefault();
+        // Entering the available Petrol (consider 1km/litre)
+        int petr = 12;
+
+        // Maximum place you can reach
+        System.out.println("The maximum place you can reach with given petrol : "
+                + destin);
 
         System.out.println("subset sum exists : " + (knapSackTabulation(weight, W, weight.length)));
     }

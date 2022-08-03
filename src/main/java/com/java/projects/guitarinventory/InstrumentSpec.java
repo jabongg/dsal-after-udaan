@@ -1,83 +1,37 @@
 package com.java.projects.guitarinventory;
 
-public abstract class InstrumentSpec {
-    private Builder builder;
-    private String model;
-    private Type type;
-    private Wood backWood;
-    private Wood topWood;
+import java.util.Iterator;
+import java.util.Map;
 
-    public InstrumentSpec(Builder builder, String model, Type type, Wood backWood, Wood topWood) {
-        this.builder = builder;
-        this.model = model;
-        this.type = type;
-        this.backWood = backWood;
-        this.topWood = topWood;
+public class InstrumentSpec {
+    Map<String, String> properties;
+
+    public InstrumentSpec(Map<String, String> properties) {
+        this.properties = properties;
     }
 
-    public Builder getBuilder() {
-        return builder;
+    public Map<String, String> getProperties() {
+        return properties;
     }
 
-    public void setBuilder(Builder builder) {
-        this.builder = builder;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public Type getType() {
-        return type;
-    }
-
-    public void setType(Type type) {
-        this.type = type;
-    }
-
-    public Wood getBackWood() {
-        return backWood;
-    }
-
-    public void setBackWood(Wood backWood) {
-        this.backWood = backWood;
-    }
-
-    public Wood getTopWood() {
-        return topWood;
-    }
-
-    public void setTopWood(Wood topWood) {
-        this.topWood = topWood;
-    }
-
-    public boolean matches(InstrumentSpec otherSpec) {
-        if (builder != otherSpec.builder)
-            return false;
-        if ((model != null) && (!model.equals("")) &&
-                (!model.equals(otherSpec.model)))
-            return false;
-        if (type != otherSpec.type)
-            return false;
-        if (backWood != otherSpec.backWood)
-            return false;
-        if (topWood != otherSpec.topWood)
-            return false;
-        return true;
+    public void setProperties(Map<String, String> properties) {
+        this.properties = properties;
     }
 
     @Override
     public String toString() {
         return "InstrumentSpec{" +
-                "builder=" + builder +
-                ", model='" + model + '\'' +
-                ", type=" + type +
-                ", backWood=" + backWood +
-                ", topWood=" + topWood +
+                "properties=" + properties +
                 '}';
     }
+    public boolean matches(InstrumentSpec otherSpec) {
+        for (Iterator i = otherSpec.getProperties().keySet().iterator(); i.hasNext(); ) {
+            String propertyName = (String) i.next();
+            if (!properties.get(propertyName).equals(otherSpec.getProperties().get(propertyName))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
