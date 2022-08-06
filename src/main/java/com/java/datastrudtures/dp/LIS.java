@@ -9,7 +9,7 @@ public class LIS {
 
     public static void main(String[] args) {
         int[] A = {10, 22, 9, 33, 21, 50, 41, 60, 80};
-        System.out.println(lis(A, A.length));
+        System.out.println(lengthOfLIS(A));
     }
 
     private static int lis(int[] A, int n) {
@@ -24,5 +24,37 @@ public class LIS {
         int exclude = lis(A, n - 1);
 
         return Math.max(include, exclude);
+    }
+
+
+
+    public static int lengthOfLIS(int[] nums) {
+
+        int[] lis = new int[nums.length];
+
+        // each element itself is an increasing sub sequence
+        for (int i = 0; i < lis.length; i++) {
+            lis[i] = 1;
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j <= i; j++) {
+
+                if (nums[i] > nums[j] && lis[i] <= lis[j]) {
+                    lis[i] = 1 + lis[j];
+                }
+            }
+        }
+
+
+        // now find max out of lis array
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < lis.length; i++) {
+            if (lis[i] > max) {
+                max = Math.max(max, lis[i]);
+            }
+        }
+
+        return max;
     }
 }

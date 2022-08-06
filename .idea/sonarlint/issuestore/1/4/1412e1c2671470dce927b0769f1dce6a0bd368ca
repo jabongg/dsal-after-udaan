@@ -1,0 +1,10 @@
+
+U	java:S106$"9Replace this use of System.out or System.err by a logger.(ºùÆÉ8×çì—¥0
+=
+java:S1659H""Declare "rsum" on a separate line.( ºÕÖúÿÿÿÿ
+D
+java:S1481H")Remove this unused "lsum" local variable.( ºÕÖúÿÿÿÿ
+D
+java:S1481H")Remove this unused "rsum" local variable.( ºÕÖúÿÿÿÿ
+V	java:S125M"<This block of commented-out lines of code should be removed.(¹Ç¯øÿÿÿÿ
+V	java:S125Q"<This block of commented-out lines of code should be removed.(¸ä‰ÿÿÿÿÿ
