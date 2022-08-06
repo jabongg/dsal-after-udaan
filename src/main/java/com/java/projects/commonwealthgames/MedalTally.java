@@ -81,7 +81,7 @@ public class MedalTally {
                     default:
                 }
             }
-            MedalTable medalTable = new MedalTable(country.getCountryName().name(), medalTablesObj.getGold(), medalTablesObj.getSilver(), medalTablesObj.getBronze(), country.getTotalMedals(country));
+            MedalTable medalTable = new MedalTable(country.getCountryName().name(), medalTablesObj.getGold(), medalTablesObj.getSilver(), medalTablesObj.getBronze(), country.getTotalMedals(country.getCountryName()));
             medalTables.add(medalTable);
         }
 

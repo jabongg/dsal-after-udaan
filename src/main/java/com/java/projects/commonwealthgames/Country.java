@@ -8,6 +8,7 @@ public class Country {
     private CountryType countryName;
     private List<Medal> medals;
     private int totalMedals;
+    private HashMap<CountryType, Integer> totalMedalsMap;
 
     public Country() {
     }
@@ -34,7 +35,13 @@ public class Country {
             totalMedals = totalMedals +  medal.getMedalCount();
         }
         this.totalMedals = totalMedals;
+        totalMedalsMap = new HashMap<>();
+        totalMedalsMap.put(country.countryName, totalMedals);
         return totalMedals;
+    }
+
+    public int getTotalMedals(CountryType country) {
+        return totalMedalsMap.get(country);
     }
 
     public void setTotalMedals(int totalMedals) {
