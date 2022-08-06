@@ -1,11 +1,12 @@
 package com.java.projects.commonwealthgames;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 // This is the driver class to show the tally / ranking on the basis of Gold, then silver then bronze.
 public class MedalTally {
 
-    private static HashMap<CountryType, Country> countryMedalMap;
+    private static List<Country> countryMedalsList;
 
     public static void main(String[] args) {
 
@@ -19,6 +20,7 @@ public class MedalTally {
         indiaMedals.add(indiaSilver);
         indiaMedals.add(indiaBronze);
         Country india = new Country(CountryType.INDIA,  indiaMedals);
+        india.setTotalMedals(india.getTotalMedals(india));
 
         // Australia
         List<Medal> australiaMedals = new ArrayList<>();
@@ -29,6 +31,7 @@ public class MedalTally {
         australiaMedals.add(australiaSilver);
         australiaMedals.add(australiaBronze);
         Country australia = new Country(CountryType.AUSTRALIA,  australiaMedals);
+        australia.setTotalMedals(australia.getTotalMedals(australia));
 
         // England
         List<Medal> englandMedals = new ArrayList<>();
@@ -39,6 +42,7 @@ public class MedalTally {
         englandMedals.add(englandSilver);
         englandMedals.add(englandBronze);
         Country england = new Country(CountryType.ENGLAND,  englandMedals);
+        england.setTotalMedals(england.getTotalMedals(england));
 
         // Canada
         List<Medal> canadaMedals = new ArrayList<>();
@@ -49,6 +53,7 @@ public class MedalTally {
         canadaMedals.add(canadaSilver);
         canadaMedals.add(canadaBronze);
         Country canada = new Country(CountryType.CANADA,  canadaMedals);
+        canada.setTotalMedals(canada.getTotalMedals(canada));
 
         // Jamaica
         List<Medal> jamaicaMedals = new ArrayList<>();
@@ -59,29 +64,31 @@ public class MedalTally {
         jamaicaMedals.add(jamaicaSilver);
         jamaicaMedals.add(jamaicaBronze);
         Country jamaica = new Country(CountryType.JAMAICA,  jamaicaMedals);
+        jamaica.setTotalMedals(jamaica.getTotalMedals(jamaica));
 
 
         // now creating country medal map
-        countryMedalMap = new HashMap<>();
-        countryMedalMap.put(CountryType.AUSTRALIA, australia);
-        countryMedalMap.put(CountryType.INDIA, india);
-        countryMedalMap.put(CountryType.JAMAICA, jamaica);
-        countryMedalMap.put(CountryType.ENGLAND, england);
-        countryMedalMap.put(CountryType.CANADA, canada);
+        countryMedalsList = new ArrayList<>();
+        countryMedalsList.add(australia);
+        countryMedalsList.add(india);
+        countryMedalsList.add(jamaica);
+        countryMedalsList.add(england);
+        countryMedalsList.add(canada);
 
-        System.out.println(countryMedalMap);
-
-
-        System.out.println(new Country().getTotalMedals(india, countryMedalMap));
-        System.out.println(new Country().getTotalMedals(australia, countryMedalMap));
-        System.out.println(new Country().getTotalMedals(england, countryMedalMap));
-        System.out.println(new Country().getTotalMedals(canada, countryMedalMap));
-        System.out.println(new Country().getTotalMedals(jamaica, countryMedalMap));
+        System.out.println(countryMedalsList);
 
 
         // get medal tally sorted on basis of Gold medals, then Silver medals and then Bronze
-        Comparator<Medal> medalComparator = Comparator.comparing(Medal::getMedalType);//.thenComparing(Medal::getMedalCount);
-        Collections.sort(indiaMedals, medalComparator);
-        System.out.println(indiaMedals);
+        for (Country country : countryMedalsList) {
+            List<Medal> medals = country.getMedals();
+
+            Comparator<Medal> medalComparator = Comparator.comparing(Medal::getMedalCount).reversed();//.thenComparing(Medal::getMedalCount);
+            Collections.sort(medals, medalComparator);
+            System.out.println(medals);
+           // List list = country.getMedals().stream().filter(medal -> medal.getMedalType().name().equals("GOLD")).collect(Collectors.toList());
+            //System.out.println(country);
+
+            Comparator<Country> countryComparator = Comparator.comparing(Country::getCountryName);
+        }
     }
 }

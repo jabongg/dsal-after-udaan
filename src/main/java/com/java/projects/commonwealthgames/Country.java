@@ -22,18 +22,30 @@ public class Country {
         return "Country{" +
                 "countryName=" + countryName +
                 ", medals=" + medals +
-                ", totalMedals=" + totalMedals +
+                ", totalMedals=" + this.totalMedals +
                 '}';
     }
 
-    public int getTotalMedals(Country country, HashMap<CountryType, Country> countryMedalMap) {
+    // instead of calculating each time, we can put the total count in a map for a country after calculation.
+    public int getTotalMedals(Country country) {
         int totalMedals = 0;
-        Country currentCountry = countryMedalMap.get(country.countryName);
-        List<Medal> medals = currentCountry.medals;
+        List<Medal> medals = country.medals;
         for (Medal medal: medals) {
             totalMedals = totalMedals +  medal.getMedalCount();
         }
         this.totalMedals = totalMedals;
         return totalMedals;
+    }
+
+    public void setTotalMedals(int totalMedals) {
+        this.totalMedals = totalMedals;
+    }
+
+    public CountryType getCountryName() {
+        return countryName;
+    }
+
+    public List<Medal> getMedals() {
+        return medals;
     }
 }
