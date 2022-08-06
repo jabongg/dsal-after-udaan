@@ -77,18 +77,32 @@ public class MedalTally {
 
         System.out.println(countryMedalsList);
 
-
         // get medal tally sorted on basis of Gold medals, then Silver medals and then Bronze
+        List<MedalTable> medalTables = new ArrayList<>();
+
+
         for (Country country : countryMedalsList) {
             List<Medal> medals = country.getMedals();
 
-            Comparator<Medal> medalComparator = Comparator.comparing(Medal::getMedalCount).reversed();//.thenComparing(Medal::getMedalCount);
-            Collections.sort(medals, medalComparator);
-            System.out.println(medals);
-           // List list = country.getMedals().stream().filter(medal -> medal.getMedalType().name().equals("GOLD")).collect(Collectors.toList());
-            //System.out.println(country);
+            for (Medal medal: medals) {
+                int gold = 0;
+                int silver = 0;
+                int bronze = 0;
 
-            Comparator<Country> countryComparator = Comparator.comparing(Country::getCountryName);
+                switch (medal.getMedalType()) {
+                    case GOLD: gold = medal.getMedalCount(); break;
+                    case SILVER: silver = medal.getMedalCount(); break;
+                    case BRONZE: bronze = medal.getMedalCount(); break;
+                    default:
+                }
+
+                MedalTable medalTable = new MedalTable(country.getCountryName().name(), gold, silver, bronze, country.getTotalMedals(country));
+                medalTables.add(medalTable);
+            }
         }
+
+        System.out.println(medalTables);
+
+        // now using comparator on MedalTable to store prepare the tally.
     }
 }
