@@ -7,6 +7,9 @@ public class MedalTable {
     private int bronze;
     private int totalMedals;
 
+    public MedalTable() {
+    }
+
     public MedalTable(String countryName, int gold, int silver, int bronze, int totalMedals) {
         this.countryName = countryName;
         this.gold = gold;
