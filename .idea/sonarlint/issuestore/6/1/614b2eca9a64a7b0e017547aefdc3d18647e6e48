@@ -1,0 +1,8 @@
+
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(òÞ 
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(óÒƒæýÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(ÛâÜôûÿÿÿÿ
+\
+java:S1192"FDefine a constant instead of duplicating this literal "style" 3 times.(Ò®é¡
+T
+java:S1155/">Use isEmpty() to check whether the collection is empty or not.(ªÅäð

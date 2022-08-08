@@ -1,0 +1,12 @@
+
+P
+java:S1854"5Remove this useless assignment to local variable "m".(§Èş…ùÿÿÿÿ
+:
+java:S1659"Declare "m" on a separate line.(§Èş…ùÿÿÿÿ
+A
+java:S1481"&Remove this unused "m" local variable.(§Èş…ùÿÿÿÿ
+A
+java:S1197",Move the array designators [][] to the type.(¬ÌíT
+Q	java:S125""<This block of commented-out lines of code should be removed.(’‹Õ
+Z	java:S106;"9Replace this use of System.out or System.err by a logger.(Ï„›ºúÿÿÿÿ8ë÷øò¦0
+Z	java:S106>"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ÛÍúò¦0

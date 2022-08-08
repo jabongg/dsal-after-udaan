@@ -1,0 +1,19 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(óÏ™8ŸÎüŠ¡0
+]	java:S125	"<This block of commented-out lines of code should be removed.(Ğ‘Òıÿÿÿÿ8êõüŠ¡0
+A
+java:S1659R"Declare "w" on a separate line.(³ù·¿ÿÿÿÿÿ8çû¥‹¡0
+N
+java:S1197S",Move the array designators [][] to the type.(’Ò’şÿÿÿÿ8çû¥‹¡0
+Y
+java:S1144"7Remove this unused private "knapsack01Memoized" method.(ù™¥’úÿÿÿÿ8íõüŠ¡0
+D
+java:S11215".Extract the assignment out of this expression.(”Ü¢
+D
+java:S11217".Extract the assignment out of this expression.(§¶ÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡ ëß
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ïŞÊ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù™¥’úÿÿÿÿ
+m	java:S117="QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í¯à©8À–‹¡0
+m	java:S117Q"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†Õ¥8É¶­‹¡0
+r	java:S117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Ò’şÿÿÿÿ8éû¥‹¡0
