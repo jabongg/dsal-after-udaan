@@ -1,13 +1,0 @@
-
-Q	java:S125"<This block of commented-out lines of code should be removed.(Öù 
-V	java:S125"<This block of commented-out lines of code should be removed.(ÌÚƒêøÿÿÿÿ
-V	java:S125"<This block of commented-out lines of code should be removed.(•®îÑüÿÿÿÿ
-Q	java:S125!"<This block of commented-out lines of code should be removed.(¬èø´
-T
-java:S1612#">Replace this lambda with method reference 'Integer::toString'.(äÃ·°
-N	java:S106#"9Replace this use of System.out or System.err by a logger.(äÃ·°
-S	java:S106%"9Replace this use of System.out or System.err by a logger.(ÍûÄúÿÿÿÿ
-S	java:S106&"9Replace this use of System.out or System.err by a logger.(¿÷æáúÿÿÿÿ
-S	java:S106'"9Replace this use of System.out or System.err by a logger.(¡µ¤½üÿÿÿÿ
-S
-java:S1128"8Remove this unused import 'java.util.function.Consumer'.(Ì†ƒÔùÿÿÿÿ
