@@ -107,8 +107,6 @@ i
 	user2.txt,3/3/33f63804e29474c8b579b06da7f418bddc9e631d
 9
 	file1.txt,c/e/ce1be0ff4065a6e9415095c95f25f47a633cef2b
-r
-Bsrc/main/java/com/java/projects/ooad/singleresponsibilty/User.java,f/c/fc8f936bd59834ac0d25cf16c18125c4b0cd6552
 u
 Esrc/main/java/com/java/projects/ooad/singleresponsibilty/UserDao.java,b/b/bbd9ceafe730bc27319d8af6419f3df5b4f733c3
 x
