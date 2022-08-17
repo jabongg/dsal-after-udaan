@@ -229,7 +229,3 @@ r
 Bsrc/main/java/com/java/projects/vendingmachine/VendingMachine.java,a/4/a4a6f79a2f951a7b67c62aa8d5f07edb875c77a3
 {
 Ksrc/main/java/com/java/projects/vendingmachine/TextBasedVendingMachine.java,b/1/b100825127085c5876b648a38ea63ac11bffcf0e
-p
-@src/main/java/com/java/projects/commonwealthgames/MedalType.java,8/c/8c32b5284dc03c1f3983a63866d3b6a4693d133b
-q
-Asrc/main/java/com/java/projects/commonwealthgames/MedalTable.java,3/0/30710393462d3069e4b090013c8362ae17fef476
