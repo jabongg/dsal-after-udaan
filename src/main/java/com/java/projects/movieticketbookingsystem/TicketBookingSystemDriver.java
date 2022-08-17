@@ -54,8 +54,17 @@ public class TicketBookingSystemDriver {
         currentRunningMovies.add(movie2);
         currentRunningMovies.add(movie3);
         cinemaHall.currentRunningMovies = currentRunningMovies;
-        //ticket.ticketAmount = 100; // hardcoding for now
-        ticket = ticket.bookTicket(user, movie1, cinemaHall, new Date()); // today's booking
+
+        Seat seat = new Seat();
+        seat.setSeatType(SeatType.GOLD);
+        SeatPosition position = new SeatPosition();
+        position.setSeatRow('J');
+        position.setSeatNumber(30);
+        seat.setSeatPosition(position);
+
+        System.out.println("selected seat : " + seat);
+
+        ticket = ticket.bookTicket(user, movie1, cinemaHall, new Date(), seat); // today's booking
         System.out.println("ticket description :" + ticket);
 
         // make payment

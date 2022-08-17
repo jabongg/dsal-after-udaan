@@ -6,7 +6,7 @@ public class CinemaHall {
     // we can have cinemaHall type enum like Mulitiplex or single Screen.
     String name;
     City city; // we can have location also Location lat,lng for exact location.
-    List<Audi> audies;
+    List<Audi> audies; // for auditoriums in case of a multiplex.
 
     List<Movie> currentRunningMovies;  // movies whose poster will be out of the cinema i.e. cinema poster.
 

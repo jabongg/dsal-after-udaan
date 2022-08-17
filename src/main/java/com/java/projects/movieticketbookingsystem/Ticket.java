@@ -11,13 +11,16 @@ public class Ticket {
     boolean isCancelled;
 
 
-    public Ticket bookTicket(User user, Movie movie, CinemaHall cinemaHall, Date bookingDate) {
+    public Ticket bookTicket(User user, Movie movie, CinemaHall cinemaHall, Date bookingDate, Seat seat) {
+
+        // check if seat is available or not
        Ticket ticket = new Ticket(); // dependency injection here can be done for large industry level product/project
         ticket.user = user;
         ticket.movie = movie;
         ticket.bookingDate = bookingDate;
         ticket.cinemaHall = cinemaHall;
         ticket.ticketAmount = 100; // hardcoding for now assuming all seats (platinum, gold, silver) have same amount;
+        seat.setAvailable(false);
         return ticket;
     }
 
@@ -28,6 +31,7 @@ public class Ticket {
         isCancelled = true;
 
         System.out.println("your ticket is cancelled");
+        // make the seat available again.
         // return payment
         return ticket;
     }
