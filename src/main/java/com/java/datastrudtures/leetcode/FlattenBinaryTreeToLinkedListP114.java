@@ -1,5 +1,7 @@
 package com.java.datastrudtures.leetcode;
 
+import com.sun.xml.internal.messaging.saaj.util.TeeInputStream;
+
 import java.util.Stack;
 
 /*
@@ -137,7 +139,7 @@ ANALYSIS :-
  */
 public class FlattenBinaryTreeToLinkedListP114 {
 
-    public static void flatten(TreeNode root) {
+    public static void flattenTree(TreeNode root) {
         if (root == null) return;
         Stack<TreeNode> s = new Stack<>();
 
@@ -152,12 +154,81 @@ public class FlattenBinaryTreeToLinkedListP114 {
                 s.push(curr.left);
             }
             if (!s.isEmpty()) {
-                curr.right = s.peek();
+                curr.right = s.pop();
             }
             curr.left = null;
         }
     }
 
+
+    public static void flatten(TreeNode root) {
+        if (root == null) return;
+        // step-1
+        TreeNode Left = root.left;
+        TreeNode Right = root.right;
+
+        // step-2
+        root.left = null;
+
+        // step-3
+        flatten(root.left);
+        flatten(root.right);
+        root.right = Left;
+        TreeNode curr = root;
+
+        // step-4
+        while (curr.right != null) curr = curr.right;
+
+        // step-5
+        curr.right = Right;
+    }
+
+
+    /*
+     * tree:
+     *             1
+     *           /  \
+     *          2    5
+     *         / \     \
+     *        3   4     6
+     */
+    public static void flattenIterative(TreeNode root) {
+
+        // for not loosing the head reference, storing root to temp
+
+        TreeNode tempRoot = root; // we can return this root in the end.
+
+        if (root == null) return;
+        while (root != null) {
+            if (root.left != null) {
+                TreeNode Left = root.left;
+                TreeNode curr = Left;
+                while (curr.right != null) curr = curr.right;
+                curr.right = root.right;  // Morris Traversal main step
+                root.left = null;
+                root.right = Left;
+            }
+            root = root.right;
+        }
+    }
+
+    public static void inorder(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        inorder(root.left);
+        System.out.print(root.data + " ");
+        inorder(root.right);
+    }
+
+    /*
+     * tree:
+     *             1
+     *           /  \
+     *          2    5
+     *         / \     \
+     *        3   4     6
+     */
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
@@ -166,10 +237,10 @@ public class FlattenBinaryTreeToLinkedListP114 {
         root.left.right = new TreeNode(4);
         root.right.right = new TreeNode(6);
 
-        flatten(root);
-
+        //flatten(root);
+        flattenIterative(root);
+        inorder(root);
     }
-
 
 
 }

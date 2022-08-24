@@ -1,9 +1,0 @@
-
-m
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(èƒ¼Ùúÿÿÿÿ
-8
-java:S36265"Remove this redundant jump.(ÉŠ©ƒ8ï¦Ì™¦0
-k
-java:S2175,"IA "Map<Character, Integer>" cannot contain a "int" in a "Character" type.(ÈÉ·ÿÿÿÿÿ8„ğ–š¦0
-e
-java:S2175/"IA "Map<Character, Integer>" cannot contain a "int" in a "Character" type.(æãğd8…ğ–š¦0

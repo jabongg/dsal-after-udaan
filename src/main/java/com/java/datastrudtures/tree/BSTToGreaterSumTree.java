@@ -5,34 +5,33 @@ import java.util.List;
 
 /**
  * Given a BST, transform it into greater sum tree where each node contains sum of all nodes greater than that node.
- *
+ * <p>
  * Example 1:
- *
+ * <p>
  * Input:
- *            2
- *          /    \
- *         1      6
- *               /  \
- *              3    7
+ *       2
+ *     /  \
+ *    1    6
+ *       /  \
+ *      3    7
  * Output: 18 16 13 7 0
  * Explanation:
  * Every node is replaced with the
  * sum of nodes greater than itself.
  * The resultant tree is:
- *                16
- *              /    \
- *            18       7
- *                   /   \
- *                  13    0
- *
+ *          16
+ *       /       \
+ *      18       7
+ *              /   \
+ *              13    0
  */
 public class BSTToGreaterSumTree {
     private static List<Integer> sortedData = new ArrayList<>();
+    static int sum = 0;
 
-    public static void transformTree( TreeNode root)
-    {
+    public static void transformTree(TreeNode root) {
 
-        inorder(root);
+        inorderList(root);
         //code here
         int[] output = new int[sortedData.size()];
         int sum = 0;
@@ -53,23 +52,43 @@ public class BSTToGreaterSumTree {
         }
     }
 
-    public static void inorder( TreeNode root) {
+    public static void inorderList(TreeNode root) {
         if (root == null) {
             return;
         }
 
-        inorder(root.left);
+        inorderList(root.left);
         sortedData.add(root.data);
-        inorder(root.right);
+        inorderList(root.right);
     }
 
-    public static void inorderReplaceNodeValues( TreeNode root) {
+    public static void inorderReplaceNodeValues(TreeNode root) {
         if (root == null) {
             return;
         }
 
         inorderReplaceNodeValues(root.left);
-       // root.data =  inorderReplaceNodeValues(root.right);
+        // root.data =  inorderReplaceNodeValues(root.right);
+    }
+
+
+    static void transformTreeUtil(TreeNode root) {
+
+        // Base case
+        if (root == null)
+            return;
+
+        // Recur for right subtree
+        transformTreeUtil(root.right);
+
+        // Update sum
+        sum = sum + root.data;
+
+        // Store old sum in current node
+        root.data = sum - root.data;
+
+        // Recur for left subtree
+        transformTreeUtil(root.left);
     }
 
 
@@ -78,10 +97,13 @@ public class BSTToGreaterSumTree {
         root = new TreeNode(null, 2, null);
         root.left = new TreeNode(null, 1, null);
         root.right = new TreeNode(null, 6, null);
-        root.right.left = new TreeNode(null, 3 , null);
+        root.right.left = new TreeNode(null, 3, null);
         root.right.right = new TreeNode(null, 7, null);
 
-        transformTree(root);
-        //Tree.inorder(root);
+        Tree.inorder(root);
+        System.out.println();
+        //transformTree(root);
+        transformTreeUtil(root);
+        Tree.inorder(root);
     }
 }

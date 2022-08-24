@@ -1,5 +1,8 @@
 package com.java.datastrudtures.tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * *
  * * Input:
@@ -54,7 +57,7 @@ public class Tree {
         int rh = height(root.right);
 
         //diameter
-        int currDiameter = 1 + lh + rh;
+        int currDiameter = 1 + lh + rh; // if passes from root.
         int ld = diameterOfBinaryTree(root.left);
         int rd = diameterOfBinaryTree(root.right);
         return Math.max(currDiameter, Math.max(ld, rd)) - 1; // for edges, not nodes;
@@ -124,5 +127,83 @@ public class Tree {
     }
 
 
+    public static void printLeaves(TreeNode root) {
 
+        if (root == null) {
+            return;
+        }
+
+        printLeaves(root.left);
+        printLeaves(root.right);
+        if (root.left == null && root.right == null) {
+            // it's a leaf node
+            System.out.print(root.data + " ");
+        }
+    }
+
+
+    public static void printLeftView(TreeNode root) {
+        // using bfs traversal and then picking the first element from the queue for each iteration
+
+    }
+
+
+    public static void printRightView(TreeNode root) {
+        // using bfs traversal and then picking the last element from the queue for each iteration
+
+    }
+
+
+    // using preorder traversal with reversed children
+    public static List<Integer> rightSideView(TreeNode root) {
+
+        List<Integer> rightViewNodes = new ArrayList<>();
+        int level = 0; // for root
+        rightViewHelper(root, level, rightViewNodes);
+
+        return rightViewNodes;
+    }
+
+    public static void rightViewHelper(TreeNode root, int level, List<Integer> rightViewNodes) {
+        // I'll be using preorder way
+
+        // base case
+        if (root == null) {
+            return;
+        }
+
+        // induction
+        if (level == rightViewNodes.size()) {
+            rightViewNodes.add(root.data);
+        }
+
+        // hypothesis
+        rightViewHelper(root.right, level + 1, rightViewNodes);
+        rightViewHelper(root.left, level + 1, rightViewNodes);
+    }
+
+    public static List<Integer> leftSideView(TreeNode root) {
+        List<Integer> leftViewNodes = new ArrayList<>();
+        int level = 0;
+        leftSideViewHelper(root, level, leftViewNodes);
+
+        return leftViewNodes;
+    }
+
+    private static void leftSideViewHelper(TreeNode root, int level, List<Integer> leftViewNodes) {
+        // using preorder for nodes
+        // base case
+        if (root == null) {
+            return;
+        }
+
+        if (level == leftViewNodes.size()) {
+            leftViewNodes.add(root.data);
+        }
+
+        //hypothesis
+        leftSideViewHelper(root.left, level + 1, leftViewNodes);
+        leftSideViewHelper(root.right, level + 1, leftViewNodes);
+
+    }
 }
