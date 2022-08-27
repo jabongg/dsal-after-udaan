@@ -1,0 +1,15 @@
+
+M
+java:S1135@"2Complete the task associated to this TODO comment.(‹ÌĞÑúÿÿÿÿ
+N	java:S106B"9Replace this use of System.out or System.err by a logger.(ÀõèÔ
+V	java:S125D"<This block of commented-out lines of code should be removed.(•®îÑüÿÿÿÿ
+S	java:S106G"9Replace this use of System.out or System.err by a logger.(Ê•óÂıÿÿÿÿ
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(ÏæŒüüÿÿÿÿ
+M	java:S106U"9Replace this use of System.out or System.err by a logger.(êñÓ9
+S	java:S106Y"9Replace this use of System.out or System.err by a logger.(¡„šûÿÿÿÿ
+X	java:S125`"<This block of commented-out lines of code should be removed.(·÷ÛÙ8–“Ÿ©0
+O	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(•Ã¸ò
+Y	java:S125‘"<This block of commented-out lines of code should be removed.(À‚ÌÖ8êµ€Ÿ©0
+T
+java:S1144g"8Remove this unused private "arrangeZerosAndOnes" method.(‡”8¡“Ÿ©0
+g	java:S117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À²—ã

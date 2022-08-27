@@ -1,0 +1,15 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(âÃ¾×
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÒÙ“÷úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(âÃ¾×
+N	java:S106"9Replace this use of System.out or System.err by a logger.(íü÷ª
+N	java:S106"9Replace this use of System.out or System.err by a logger.(âÃ¾×
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ş§´8ìÅã•§0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(âÃ¾×8·îï•§0
+]	java:S125="<This block of commented-out lines of code should be removed.(Ó”îõıÿÿÿÿ8÷ıÁ•§0
+]	java:S125X"<This block of commented-out lines of code should be removed.(Ó”îõıÿÿÿÿ8ƒÊÃ•§0
+Y	java:S125¯"<This block of commented-out lines of code should be removed.(ÓÅğÅ8±—§0
+d
+java:S1192"GDefine a constant instead of duplicating this literal "\t\t\t" 4 times.(Ş§´8º¶ø•§0
+œ
+java:S1192"Define a constant instead of duplicating this literal "+------------------------------------------------------------+" 4 times.(âÃ¾×8Êô•§0

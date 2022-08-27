@@ -206,4 +206,17 @@ public class Tree {
         leftSideViewHelper(root.right, level + 1, leftViewNodes);
 
     }
+
+    public static void printTreeVertically(TreeNode root, int verticalLevel) {
+
+
+        // base condition
+        if (root == null) {
+            return;
+        }
+
+        // hypothesis
+        printTreeVertically(root.left, -1);
+        printTreeVertically(root.right, +1);
+    }
 }

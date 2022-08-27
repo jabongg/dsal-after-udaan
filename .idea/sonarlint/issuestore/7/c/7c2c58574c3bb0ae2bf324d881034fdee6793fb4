@@ -1,0 +1,12 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‹Ì‚´ÿÿÿÿÿ
+Z	java:S1062"9Replace this use of System.out or System.err by a logger.(‚µÀ™ûÿÿÿÿ8ìÙæÙ¬0
+Q	java:S1251"<This block of commented-out lines of code should be removed.(ïàð¥
+Z	java:S106T"9Replace this use of System.out or System.err by a logger.(‚µÀ™ûÿÿÿÿ8…¥ëÙ¬0
+X	java:S125S"<This block of commented-out lines of code should be removed.(ïàð¥8ûÂªÚ¬0
+^
+java:S1126Y"AReplace this if-then-else statement by a single return statement.(Ç–¨þ8Ýø©Ú¬0
+U	java:S106a"9Replace this use of System.out or System.err by a logger.(‹Ñ£8üÂªÚ¬0
+p
+java:S1144"NRemove this unused private "reverseStringWithoutAffectingSpecialChars" method.(·™åÄþÿÿÿÿ8»ù®Ú¬0
+k	java:S117_"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕÒÙÎþÿÿÿÿ

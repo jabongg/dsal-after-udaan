@@ -1,0 +1,17 @@
+
+l
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(˜­šÈÿÿÿÿÿ
+Q	java:S1250"<This block of commented-out lines of code should be removed.(¬ÙÅŠ
+Z
+java:S1854Ç"<Remove this useless assignment to local variable "tempRoot".(‹Ê¿Á8ê²—Ş¬0
+K
+java:S1481Ç"-Remove this unused "tempRoot" local variable.(‹Ê¿Á8ë²—Ş¬0
+[	java:S106Ü"9Replace this use of System.out or System.err by a logger.(‹¯šùÿÿÿÿ8Ã¸Ñİ¬0
+^	java:S125ğ"<This block of commented-out lines of code should be removed.(»®†§øÿÿÿÿ8ŸàÜİ¬0
+q
+java:S1128"TRemove this unused import 'com.sun.xml.internal.messaging.saaj.util.TeeInputStream'.(Èû»8ì²—Ş¬0
+m	java:S117§"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯èõ38¯Ìİ¬0
+s	java:S117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™—ºıÿÿÿÿ8¯Ìİ¬0
+m	java:S117Ì"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯èõ38·ÏØİ¬0
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(Èû»8Á”–Ş¬0

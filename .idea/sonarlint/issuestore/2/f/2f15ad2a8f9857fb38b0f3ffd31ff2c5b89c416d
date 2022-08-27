@@ -1,0 +1,12 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(žð¢«
+1
+java:S36261"Remove this redundant jump.(ûÁÝ…
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(Ù÷ðÝ
+Q	java:S125-"<This block of commented-out lines of code should be removed.(ðêÝ°
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(Ûëœ¬
+S
+java:S1144"1Remove this unused private "findSumPairs" method.(§õ¬œýÿÿÿÿ8¹Ž´¬©0
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜¶í‡þÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á½´…øÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§õ¬œýÿÿÿÿ

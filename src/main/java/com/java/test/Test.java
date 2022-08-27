@@ -2,7 +2,7 @@ package com.java.test;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import java.lang.Math;
 public class Test {
 
     private static final int age = 10;
@@ -13,7 +13,7 @@ public class Test {
         Test.getType();
         Test t = null;
         t.getType(); // no NPE here as the method is static
-        t.getAge(); // expected null pointer exception here
+        //t.getAge(); // expected null pointer exception here
 
 
         // copy student names and age from student to employee
@@ -36,6 +36,7 @@ public class Test {
 
         // java 8 way
 
+        System.out.println(Math.sqrt(4));
 
     }
 
