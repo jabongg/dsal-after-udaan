@@ -3,6 +3,9 @@ package com.java.datastrudtures.tree;
 //Java implementation to find lowest common ancestor of
 // n1 and n2 using one traversal of binary tree
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /* Class containing left and right child of current
 node and key value*/
 class Node {
@@ -17,7 +20,7 @@ class Node {
 
 class LowestCommonAncestor {
     //Root of the Binary Tree
-    Node root;
+    private static Node root;
 
     Node findLCA(int n1, int n2) {
         return findLCA(root, n1, n2);
@@ -51,7 +54,15 @@ class LowestCommonAncestor {
         return (lcaLeft != null) ? lcaLeft : lcaRight;
     }
 
-    /* Driver program to test above functions */
+
+    /* Driver program to test above functions
+    *
+    *        1
+    *       / \
+    *      2   3
+    *     / \ / \
+    *    4  5 6  7
+    * */
     public static void main(String args[]) {
         LowestCommonAncestor tree = new LowestCommonAncestor();
         tree.root = new Node(1);
@@ -66,11 +77,92 @@ class LowestCommonAncestor {
         System.out.println("LCA(4, 6) = " +
                 tree.findLCA(4, 6).data);
         System.out.println("LCA(3, 4) = " +
-                tree.findLCA(3, 4).data);
+                tree.findLca(3, 4).data);
         System.out.println("LCA(2, 4) = " +
-                tree.findLCA(2, 4).data);
+                tree.findLca(2, 4).data);
+
+        System.out.println(nextRight(root, 4).data);
     }
 
 
+    public static Node lca(Node root, int p1, int p2) {
+        if (root == null || p1 == root.data || p2 == root.data)
+            return root;
 
+        Node l = lca(root.left, p1, p2);
+        Node r = lca(root.right, p1, p2);
+
+        if (l == null) {
+            return r;
+        } else if (r == null) {
+            return l;
+        } else {
+            return root; // if both are not null, we have found the result
+        }
+    }
+
+    public static Node findLca(int n1, int n2) {
+        return lca(root, n1, n2);
+    }
+
+
+    public static Node findNextRight(Node root, int key) {
+        Node result = new Node(-1);
+        boolean keyFound = false;
+        // try for bfs
+        Queue<Node> q = new LinkedList<>();
+        q.offer(root);
+
+        while (!q.isEmpty()) {
+            // check if key is already found
+            if (keyFound) {
+                return q.poll();
+            }
+
+            Node temp = q.poll();
+            q.offer(temp.left);
+            q.offer(temp.right);
+
+            // logic for next right
+            if (temp.data == key) {
+                keyFound = true;
+            }
+        }
+        return result;
+    }
+
+
+    public static Node nextRight(Node root, int key) {
+        Node result = new Node(-1);
+        // try for bfs
+        Queue<Node> q = new LinkedList<>();
+        q.offer(root);
+
+        while (!q.isEmpty()) {
+
+            int prevKey = -1;
+            int len = q.size();
+
+            for (int i = 0; i < len; i++) {
+                Node curr = q.poll();
+
+                if (prevKey == key) {
+                    return curr;
+                } else {
+                    prevKey = curr.data;
+                }
+
+
+                if (curr.left != null)
+                    q.offer(curr.left);
+
+                if (curr.right != null)
+                    q.offer(curr.right);
+
+            }
+
+
+        }
+        return result;
+    }
 }
