@@ -7,8 +7,7 @@ public class AlphaNumericPrint {
         this.flag = flag;
     }
 
-    synchronized void Alpha() throws InterruptedException {
-
+    synchronized void alpha() throws InterruptedException {
         for (char i = 'A'; i <= 'Z'; i++) {
             while (flag == true) {
                 wait();
@@ -19,8 +18,7 @@ public class AlphaNumericPrint {
         }
     }
 
-    synchronized void numbers() throws InterruptedException {
-
+    synchronized void numeric() throws InterruptedException {
         for (int i = 1; i <= 26; i++) {
             while (flag == false) {
                 wait();
@@ -29,5 +27,29 @@ public class AlphaNumericPrint {
             notifyAll();
             flag = false;
         }
+    }
+
+    public static void main(String[] args) {
+        AlphaNumericPrint an = new AlphaNumericPrint(false);
+        Thread alpha = new Thread(() -> {
+            try {
+                an.alpha();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+
+        Thread numeric = new Thread(() -> {
+            try {
+                an.numeric();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+
+        alpha.start();
+        numeric.start();
     }
 }
