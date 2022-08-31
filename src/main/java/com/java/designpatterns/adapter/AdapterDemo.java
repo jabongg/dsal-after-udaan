@@ -1,4 +1,4 @@
-package com.java.projects.designpatterns.adapter;
+package com.java.designpatterns.adapter;
 
 public class AdapterDemo {
 
