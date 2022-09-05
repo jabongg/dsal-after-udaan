@@ -1,0 +1,2 @@
+1 . 6174 magic number (find magic numbers between 1000 to 9999)
+2. eulers forumula for calculating pi to precision;

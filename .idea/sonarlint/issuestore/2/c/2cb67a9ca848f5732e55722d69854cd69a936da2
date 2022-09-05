@@ -1,8 +1,0 @@
-
-S	java:S106	"9Replace this use of System.out or System.err by a logger.(ó™¨İøÿÿÿÿ
-:
-java:S1659"Declare "w" on a separate line.(³ù·¿ÿÿÿÿÿ
-G
-java:S1197",Move the array designators [][] to the type.(’Ò’şÿÿÿÿ
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÙÜÿÿÿÿÿ
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Ò’şÿÿÿÿ

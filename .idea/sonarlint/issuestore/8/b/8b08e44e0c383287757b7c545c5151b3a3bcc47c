@@ -1,0 +1,25 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ıòÿ†ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ò§Î®ûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+?
+java:S1659>")Declare "centralNode" on a separate line.(Õñ©
+S	java:S106i"9Replace this use of System.out or System.err by a logger.(‰ú£ûûÿÿÿÿ
+S	java:S106m"9Replace this use of System.out or System.err by a logger.(Ò‘õ©ùÿÿÿÿ
+:
+java:S1659v"Declare "E" on a separate line.(¯ÿüÿÿÿÿ
+t
+java:S2293x"YReplace the type specification in this constructor call with the diamond operator ("<>").(ıĞ»ìûÿÿÿÿ
+t
+java:S2293{"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÑÛ‚§üÿÿÿÿ
+u
+java:S2293‰"YReplace the type specification in this constructor call with the diamond operator ("<>").(ıĞ»ìûÿÿÿÿ
+u
+java:S2293Œ"YReplace the type specification in this constructor call with the diamond operator ("<>").(¬Î¿ùÿÿÿÿ
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áüñ 
+k	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ùÙÉøÿÿÿÿ
+k	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ùÙÉøÿÿÿÿ
+f	java:S117d"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÊÄá
+f	java:S117d"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÊÄá
+k	java:S117v"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ÿüÿÿÿÿ
+k	java:S117v"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ÿüÿÿÿÿ

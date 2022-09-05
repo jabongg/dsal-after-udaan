@@ -1,0 +1,17 @@
+
+n
+java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûîèõşÿÿÿÿ8ˆÓÅò®0
+€
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(À»½Çıÿÿÿÿ8’ÓÅò®0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ŸÏïªøÿÿÿÿ8“ÓÅò®0
+R
+java:S2446""0"notify" may not wake up the appropriate thread.(óÄ£¶øÿÿÿÿ8“ÓÅò®0
+€
+java:S21424"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(À»½Çıÿÿÿÿ8”ÓÅò®0
+Z	java:S106:"9Replace this use of System.out or System.err by a logger.(Û¬ñĞÿÿÿÿÿ8•ÓÅò®0
+R
+java:S2446A"0"notify" may not wake up the appropriate thread.(óÄ£¶øÿÿÿÿ8•ÓÅò®0
+D
+java:S1604O"(Make this anonymous inner class a lambda(£·®8™ÓÅò®0
+E
+java:S1604V"(Make this anonymous inner class a lambda(ÿïŞß8™ÓÅò®0

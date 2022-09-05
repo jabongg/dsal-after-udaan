@@ -1,8 +1,0 @@
-
-B
-java:S1659"'Declare "maxLength" on a separate line.(Ğ–Íşùÿÿÿÿ
-N	java:S106!"9Replace this use of System.out or System.err by a logger.(…À£›
-N	java:S106""9Replace this use of System.out or System.err by a logger.(‡çâ
-N	java:S106#"9Replace this use of System.out or System.err by a logger.(¸ï•½
-x
-java:S1192!"bDefine a constant instead of duplicating this literal "Length of the longest substring: " 3 times.(…À£›

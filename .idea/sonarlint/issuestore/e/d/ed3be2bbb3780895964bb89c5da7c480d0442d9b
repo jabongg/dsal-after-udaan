@@ -1,0 +1,12 @@
+
+Z
+java:S2147 "DCombine this catch with the one at line 30, which has the same body.(ï­£Ä
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÿ§©ƒıÿÿÿÿ
+L
+java:S1874)"0Remove this use of "readLine"; it is deprecated.(³’t8¹İ“­0
+U
+java:S1854;":Remove this useless assignment to local variable "client".(«ò¢¢øÿÿÿÿ
+F
+java:S1481;"+Remove this unused "client" local variable.(«ò¢¢øÿÿÿÿ
+_
+java:S1128"=Remove this unused import 'com.java.projects.socket.Message'.(Û³Øõÿÿÿÿÿ8ŠåÏ“­0

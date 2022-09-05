@@ -1,0 +1,34 @@
+
+9
+java:S1659"#Declare "right" on a separate line.(çùà¶
+j
+java:S1845h"TRename method "findLca" to prevent any misunderstanding/clash with method "findLCA".(ÈÕØ®
+E
+java:S1197B"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+P
+java:S2209D"5Change this instance-reference to a static reference.(êÉÍ¹ÿÿÿÿÿ
+P
+java:S2209E"5Change this instance-reference to a static reference.(ªˆğ¬ùÿÿÿÿ
+K
+java:S2209F"5Change this instance-reference to a static reference.(Œæí¶
+K
+java:S2209G"5Change this instance-reference to a static reference.(ÁĞ˜Ä
+K
+java:S2209H"5Change this instance-reference to a static reference.(¤±çõ
+K
+java:S2209I"5Change this instance-reference to a static reference.(“’¦„
+J
+java:S2209J"5Change this instance-reference to a static reference.(½¤²q
+S	java:S106K"9Replace this use of System.out or System.err by a logger.(¶ëßºÿÿÿÿÿ
+N	java:S106M"9Replace this use of System.out or System.err by a logger.(ÕğİÍ
+N	java:S106O"9Replace this use of System.out or System.err by a logger.(²©€
+P
+java:S2209P"5Change this instance-reference to a static reference.(õ®ğ®ÿÿÿÿÿ
+N	java:S106Q"9Replace this use of System.out or System.err by a logger.(¯ÏíŞ
+K
+java:S2209R"5Change this instance-reference to a static reference.(ù»şØ
+U	java:S106T"9Replace this use of System.out or System.err by a logger.(ÌâÙü8Ê–Ã®0
+\
+java:S2259R"FA "NullPointerException" could be thrown; "findLca()" can return null.(ù»şØ
+a
+java:S2259P"FA "NullPointerException" could be thrown; "findLca()" can return null.(õ®ğ®ÿÿÿÿÿ

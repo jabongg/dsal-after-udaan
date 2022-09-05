@@ -1,0 +1,14 @@
+
+L
+java:S3740	"/Provide the parametrized type for this generic.(íÔ´Œ8Ù¥·Ê­0
+Q
+java:S3740
+"/Provide the parametrized type for this generic.(À…ÍÊúÿÿÿÿ8Ú¥·Ê­0
+m
+java:S1149	"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(íÔ´Œ8Ü¥·Ê­0
+r
+java:S1149
+"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(À…ÍÊúÿÿÿÿ8Ü¥·Ê­0
+Z	java:S106+"9Replace this use of System.out or System.err by a logger.(½Æ½Äûÿÿÿÿ8˜Ã¸Ê­0
+Z	java:S106,"9Replace this use of System.out or System.err by a logger.(¼öÊñýÿÿÿÿ8˜Ã¸Ê­0
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(½Æ½Äûÿÿÿÿ8™Ã¸Ê­0

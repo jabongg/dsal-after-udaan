@@ -38,6 +38,11 @@ public class Test {
 
         System.out.println(Math.sqrt(4));
 
+        int[] w = {1, 3, 4, 5};
+        int[] val = {1, 4, 5, 7};
+        int W = 7;
+
+        System.out.println(knapsack(w, val, W, w.length));
     }
 
 
@@ -47,5 +52,20 @@ public class Test {
 
     public void getAge() {
         System.out.println("getAge()");
+    }
+
+    public static int knapsack(int[] w, int[] val, int W, int n) {
+        if (W <= 0 || n == 0) {
+            return 0;
+        }
+
+        //choice diagram
+        if (w[n - 1] <= W) {
+            // include
+             return Math.max(val[n - 1] + knapsack(w, val, W - w[n - 1], n - 1 ), knapsack(w, val, W, n - 1 ));
+        } else {
+            // exclude
+            return knapsack(w, val, W, n - 1 );
+        }
     }
 }

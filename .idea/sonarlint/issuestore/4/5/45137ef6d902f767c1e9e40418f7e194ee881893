@@ -1,0 +1,16 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ï¤‚Ê8¾Š©“­0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(•¼¹ÿøÿÿÿÿ8¿Š©“­0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(—Õ§™8¿Š©“­0
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ8ÀŠ©“­0
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(˜İÌáşÿÿÿÿ8£ª®“­0
+U
+java:S18540":Remove this useless assignment to local variable "server".(ÿµÔ¥şÿÿÿÿ
+E
+java:S1197."*Move the array designators [] to the type.(º ìıÿÿÿÿ
+F
+java:S14810"+Remove this unused "server" local variable.(ÿµÔ¥şÿÿÿÿ
+_
+java:S1128"=Remove this unused import 'com.java.projects.socket.Message'.(Û³Øõÿÿÿÿÿ8ÒĞ“­0
+0
+java:S1700"Rename field "server"(çìÃÔıÿÿÿÿ

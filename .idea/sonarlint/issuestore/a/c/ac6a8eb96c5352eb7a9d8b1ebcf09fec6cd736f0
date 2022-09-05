@@ -1,0 +1,19 @@
+
+{
+java:S1149&"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(Ž¹Ù±
+{
+java:S11496"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(Ã”Ë—
+€
+java:S1149X"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ßß¶ïúÿÿÿÿ
+{
+java:S1149b"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(Ü‘ž¼
+V	java:S125A"<This block of commented-out lines of code should be removed.(‰¥™êùÿÿÿÿ
+E
+java:S1197S"*Move the array designators [] to the type.(’ÖÏêþÿÿÿÿ
+V	java:S125V"<This block of commented-out lines of code should be removed.(ŒãÉÒûÿÿÿÿ
+n
+java:S3012Z"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(â—§t
+S	java:S106]"9Replace this use of System.out or System.err by a logger.(ÊŒØÿÿÿÿÿ
+7
+java:S1116^"Remove this empty statement.(“ìÊ·úÿÿÿÿ
+X	java:S125b"<This block of commented-out lines of code should be removed.(Ü‘ž¼8»¦Àô­0

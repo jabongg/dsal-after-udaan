@@ -1,21 +1,0 @@
-
-f
-java:S1149 "PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(éñ‚¢
-@
-java:S1197
-"*Move the array designators [] to the type.(­æÍ
-Y
-java:S1659">Declare "i" and all following declarations on a separate line.(„¶£÷øÿÿÿÿ
-M	java:S106"9Replace this use of System.out or System.err by a logger.(ÔýÉR
-E
-java:S1197"*Move the array designators [] to the type.(¡þÏÖøÿÿÿÿ
-E
-java:S1197"*Move the array designators [] to the type.(Ó¢¸Ïüÿÿÿÿ
-E
-java:S1197"*Move the array designators [] to the type.(÷ÿœÚøÿÿÿÿ
-a
-java:S1764%"KCorrect one of the identical sub-expressions on both sides of operator "&&"(¾ÜÝ÷
-l	java:S127'"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
-s	java:S1275"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK8–ãâì¦0
-Y
-java:S1155(">Use isEmpty() to check whether the collection is empty or not.(Áõ‹žüÿÿÿÿ

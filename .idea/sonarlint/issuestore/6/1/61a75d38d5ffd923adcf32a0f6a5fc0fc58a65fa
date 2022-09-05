@@ -1,0 +1,10 @@
+
+k
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¶·ıÿÿÿÿ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(Éü¥ ûÿÿÿÿ
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ¢Å¼üÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö³¿ôüÿÿÿÿ
+f	java:S117)"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ıë§
+k	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÃéøÿÿÿÿ

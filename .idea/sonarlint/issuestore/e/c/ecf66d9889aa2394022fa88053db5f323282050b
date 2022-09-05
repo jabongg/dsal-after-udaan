@@ -1,0 +1,12 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(Ïªåóıÿÿÿÿ
+E
+java:S1172"(Remove this unused method parameter "k".(º¨öº8·æı©¬0
+E	java:S108")Either remove or fill this block of code.(ãÇâ‡8–Èı©¬0
+P	java:S125'"<This block of commented-out lines of code should be removed.(ÆöÒd
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(Éü¥ ûÿÿÿÿ
+F
+java:S1144!"0Remove this unused private "rotateArray" method.(Å‹—
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Ì®İ
+f	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å‹—
+f	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À²—ã
