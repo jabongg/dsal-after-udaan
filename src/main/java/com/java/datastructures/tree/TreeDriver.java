@@ -14,17 +14,26 @@ import static com.java.datastructures.tree.Tree.*;
  *         1      16
  *          \    /  \
  *           2   4    27
+ *
+ * === prune tree
+ *             1
+ *          /    \
+ *         1      1
+ *          \    /  \
+ *           0   0    0
+ *                   /
+ *                  1
  */
 public class TreeDriver {
     public static void main(String[] args) {
         TreeNode root = null;
-        root = new TreeNode(null, 3, null);
+        root = new TreeNode(null, 1, null);
         root.left = new TreeNode(null, 1, null);
-        root.right = new TreeNode(null, 16, null);
-        root.left.right = new TreeNode(null, 2, null);
-        root.right.left = new TreeNode(null, 4, null);
-        root.right.right = new TreeNode(null, 27, null);
-        root.right.right.left = new TreeNode(null, 17, null);
+        root.right = new TreeNode(null, 1, null);
+        root.left.right = new TreeNode(null, 0, null);
+        root.right.left = new TreeNode(null, 0, null);
+        root.right.right = new TreeNode(null, 0, null);
+        root.right.right.left = new TreeNode(null, 1, null);
 
 
 //        TreeNode root1 = root;
@@ -73,6 +82,9 @@ public class TreeDriver {
 
         TreeMap<Integer, Vector<Integer>> verticalNodesMap = Tree.printTreeVertically(root);
         System.out.println("left view of the tree : " + verticalNodesMap);
+
+        Tree.inorder(Tree.pruneTree(root));
+
 
     }
 }

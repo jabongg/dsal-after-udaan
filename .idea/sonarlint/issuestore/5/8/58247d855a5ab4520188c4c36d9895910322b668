@@ -1,0 +1,8 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ä³Ðýÿÿÿÿ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(š¾£›
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(­Þ‘Ïþÿÿÿÿ
+Z	java:S106?"9Replace this use of System.out or System.err by a logger.(·°µŽùÿÿÿÿ8Ž¸ñâ°0
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(ìÅÿá8Í¨òâ°0
+W
+java:S1226"AIntroduce a new variable instead of reusing the parameter "prev".(ï¼ÌÚ

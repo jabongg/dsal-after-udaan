@@ -7,7 +7,7 @@ public class PalindromePartitioning {
     private static int[][] t = new int[1001][1001];
 
     public static void main(String[] args) {
-        String s = "nitin";
+        String s = "naitina";
 
         System.out.println(findMinimumPartioning(s));
     }

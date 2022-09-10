@@ -262,4 +262,20 @@ public class Tree {
 
         System.out.println(nodes);
     }
+
+    public static TreeNode pruneTree(TreeNode root) {
+
+        //base condition
+        if (root == null) {
+            return root;
+        }
+
+        // hypothesis
+        root.left = pruneTree(root.left);
+        root.right = pruneTree(root.right);
+
+        // induction
+        return (root.data == 0 && root.left == null && root.right == null) ? null : root;
+    }
+
 }

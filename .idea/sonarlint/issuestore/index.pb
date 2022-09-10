@@ -235,8 +235,6 @@ a
 1src/main/java/com/java/projects/jersey/Hello.java,f/f/ff7b42f15a87cf45c06434f580d66e6b99ffda36
 v
 Fsrc/main/java/com/java/datastructures/sorting/BubbleSortRecursive.java,9/3/9318fc18400551a2705a108b51767f8dc0035d1f
-h
-8src/main/java/com/java/datastructures/tree/TreeNode.java,a/a/aa55dcfde44d3379ed0034eb331e0e829fc91f9f
 V
 &src/main/java/com/java/test/Hello.java,7/e/7eff55b1e156abd2c3a8b65417c06d13ff8e2e67
 \
@@ -346,6 +344,6 @@ U
 h
 8src/main/java/com/java/datastructures/dp/Knapsack01.java,c/4/c4875a0b0e2714f3f4037b7b3bc57d36de183ac3
 j
-:src/main/java/com/java/datastructures/tree/TreeDriver.java,d/9/d9820183c34ed8e31183735c4ee1b2a7eb577559
-d
-4src/main/java/com/java/datastructures/tree/Tree.java,0/7/070cd0d23b1b346c09bdc97099e4cb70606ba162
+:src/main/java/com/java/interview/tatadigital/questions.txt,4/9/49bf0371fc7e3bbe3b0e72c75be300c59d0196c7
+m
+=src/main/java/com/java/interview/tatadigital/MagicNumber.java,5/8/58247d855a5ab4520188c4c36d9895910322b668
