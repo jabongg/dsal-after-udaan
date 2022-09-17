@@ -10,6 +10,20 @@ public class Test {
 
     public static void main(String[] args) {
 
+        String s1 = new String("Java");
+        String s2 = s1;
+        String s3 = s1.intern();
+        //String s4 = null;
+        //String s5 = s4.intern();
+
+        System.out.println(s2 == s1); // true
+        System.out.println(s3 == s1); // false
+        System.out.println(s2 == s3); // false
+        System.out.println("s1" + s1);
+        System.out.println("s2" + s2);
+        System.out.println("s3" + s3);
+
+
         Test.getType();
         Test t = null;
         t.getType(); // no NPE here as the method is static
@@ -18,21 +32,21 @@ public class Test {
 
         // copy student names and age from student to employee
 
-        Student s1 = new Student("ajay", 16);
-        Student s2 = new Student("vijay", 22);
-        Student s3 = new Student("shilpa", 13);
-        Student s4 = new Student("Divya", 27);
-
-        List<Student> students = new ArrayList<>();
-        students.add(s1); students.add(s2); students.add(s3); students.add(s4);
-
-        //java 7 way
-        List<Employee> employees = new ArrayList<>();
-        for (Student student : students) {
-            Employee employee = new Employee(student.name, student.age);
-            employees.add(employee);
-        }
-        System.out.println(employees);
+//        Student s1 = new Student("ajay", 16);
+//        Student s2 = new Student("vijay", 22);
+//        Student s3 = new Student("shilpa", 13);
+//        Student s4 = new Student("Divya", 27);
+//
+//        List<Student> students = new ArrayList<>();
+//        students.add(s1); students.add(s2); students.add(s3); students.add(s4);
+//
+//        //java 7 way
+//        List<Employee> employees = new ArrayList<>();
+//        for (Student student : students) {
+//            Employee employee = new Employee(student.name, student.age);
+//            employees.add(employee);
+//        }
+//        System.out.println(employees);
 
         // java 8 way
 

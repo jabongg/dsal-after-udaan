@@ -1,0 +1,18 @@
+
+g
+java:S1149ö"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ŠÈÝà
+U
+java:S1118":Add a private constructor to hide the implicit public one.(—ä÷·øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‹¯šùÿÿÿÿ
+Q	java:S125>"<This block of commented-out lines of code should be removed.(–­Æœ
+T	java:S106‹"9Replace this use of System.out or System.err by a logger.(‹¯šùÿÿÿÿ
+R	java:S125Ñ"<This block of commented-out lines of code should be removed.(™Ù±Ö
+;
+java:S1168Þ"$Return an empty map instead of null.(¥¹ï
+;
+java:S1168ò"$Return an empty map instead of null.(¥¹ï
+O	java:S106‡"9Replace this use of System.out or System.err by a logger.(»€â
+
+java:S1319Ó"sThe return type of this method should be an interface such as "SortedMap" rather than the implementation "TreeMap".(—ŠÔÞùÿÿÿÿ
+U
+java:S3516Û"9Refactor this method to not always return the same value.(Ì…ó¢ÿÿÿÿÿ
